@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="../../static/css/styles.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+  <!-- Хедер -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <a class="navbar-brand" href="#">Ваш сайт</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../base/index.html">Домой</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../base/index.html">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">Вход</a>
+          </li>
+          <!-- Добавьте дополнительные элементы навигации по своему усмотрению -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Контент страницы -->
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <h2 class="text-center mb-4">Форма входа</h2>
+        <form>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Введите email">
+          </div>
+          <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" class="form-control" id="password" placeholder="Введите пароль">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Войти</button>
+        </form>
+        <div class="text-center mt-3">
+          <p>Нет аккаунта? <a href="register.html">Зарегистрируйтесь</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer class="py-3 bg-secondary text-light">
+    <div class="container text-center justify-content-center">
+      <p class="mb-0">&copy; 2023 Ваш сайт</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

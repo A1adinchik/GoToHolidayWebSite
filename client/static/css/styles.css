@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* Стили для основной страницы */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .carousel-caption {
+    right: 0;
+    left: 0;
+    z-index: 10;
+    text-align: left;
+    padding: 20px; /* Добавьте отступы для текста в карусели */
+  }
+  
+  .carousel-caption h3,
+  .carousel-caption p,
+  .carousel-caption a {
+    color: #fff !important; /* Обеспечиваем читаемость текста на затемненном фоне */
+  }
+  
+  .carousel-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  
+  .carousel-item img {
+    position: relative;
+    z-index: 1;
+    object-fit: cover; /* Используйте object-fit: cover для заполнения контейнера картинкой */
+    max-height: 700px; /* Установите максимальную высоту изображений в карусели */
+    width: 100%; /* Установите ширину изображений в 100% */
+  }
+  
+  .carousel-container {
+    width: 100%; /* Установите ширину карусели в 100% */
+    margin-bottom: 170px; /* Установите подходящее значение отступа для предотвращения перекрытия футера */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 3; /* Установите значение z-index, чтобы стрелочки были поверх футера */
+    width: 10%; /* Увеличьте ширину стрелочек карусели */
+    top: 50%; /* Поместите стрелочки по вертикали по центру */
+    transform: translateY(-50%);
+    padding: 10px; /* Добавьте отступы для стрелочек */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: contain; /* Подгоните размер фона стрелочек */
+  }
+  
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  
+  .carousel {
+    margin-bottom: 20px;
+  }

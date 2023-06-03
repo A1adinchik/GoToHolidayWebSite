@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #343a40;
+        color: #fff;
+    }
+
+    .card-fixed-height {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-fixed-height .card-body {
+      flex: 1 0 auto;
+    }
+
+    .card-fixed-height .card-img-top {
+      object-fit: cover;
+      height: 200px; /* Выберите желаемую высоту изображения */
+    }
+
+    .card-dark {
+      background-color: #343a40; /* Замените на желаемый тёмный цвет для карточек */
+      border-color: #343a40; /* Замените на желаемый тёмный цвет для рамок карточек */
+      color: #fff;
+    }
+
+    .card-border {
+      border: 1px solid #dee2e6; /* Замените на желаемый цвет рамки */
+    }
+
+    footer {
+        width: 100%;
+        background-color: #343a40;
+        color: #fff;
+        text-align: center;
+        margin-top: auto;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+  <!-- Хедер -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <a class="navbar-brand" href="#">GoToHoliday</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Домой</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Регистрация</a>
+          </li>
+          <!-- Добавьте дополнительные элементы навигации по своему усмотрению -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Контент страницы -->
+  <div class="container">
+    <h2 class="text-center mt-5">Каталог туров</h2>
+
+    <!-- Переключатель категорий -->
+    <div class="text-center mt-4 mb-4">
+      <div class="btn-group" role="group" aria-label="Категории">
+        <button type="button" class="btn btn-secondary active" data-category="all">Все</button>
+        <button type="button" class="btn btn-secondary" data-category="with-hotel">Тур с отелем</button>
+        <button type="button" class="btn btn-secondary" data-category="without-hotel">Тур без отеля</button>
+      </div>
+    </div>
+
+    <div class="row" id="catalog-items">
+      <div class="col-md-4 col-lg-4 mb-4" data-category="with-hotel">
+        <div class="card card-fixed-height card-dark card-border">
+          <img src="https://goodtimetravel.ru/wp-content/uploads/2017/12/ttenerife-1.jpg" class="card-img-top" alt="Item 1">
+          <div class="card-body">
+            <h5 class="card-title">Туристический тур с отелем 1</h5>
+            <p class="card-text">Описание тура с отелем 1</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 mb-4" data-category="without-hotel">
+        <div class="card card-fixed-height card-dark card-border">
+          <img src="https://www.tourprom.ru/site_media/images/upload/2016/7/1/countries/big_kruiz_01072016175823.jpg" class="card-img-top" alt="Item 2">
+          <div class="card-body">
+            <h5 class="card-title">Туристический тур без отеля 1</h5>
+            <p class="card-text">Описание тура без отеля 1</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 mb-4" data-category="with-hotel">
+        <div class="card card-fixed-height card-dark card-border">
+          <img src="https://sgc-ae.com/wp-content/uploads/2022/04/oae-foto-.jpg" class="card-img-top" alt="Item 3">
+          <div class="card-body">
+            <h5 class="card-title">Туристический тур с отелем 2</h5>
+            <p class="card-text">Описание тура с отелем 2</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 mb-4" data-category="without-hotel">
+        <div class="card card-fixed-height card-dark card-border">
+          <img src="https://bronntravel.com.ua/wp-content/uploads/2019/08/kruize.png" class="card-img-top" alt="Item 4">
+          <div class="card-body">
+            <h5 class="card-title">Туристический тур без отеля 2</h5>
+            <p class="card-text">Описание тура без отеля 2</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 mb-4" data-category="with-hotel">
+        <div class="card card-fixed-height card-dark card-border">
+          <img src="https://tour-platform.ru/wp-content/uploads/2022/10/antalya.jpg" class="card-img-top" alt="Item 5">
+          <div class="card-body">
+            <h5 class="card-title">Туристический тур с отелем 3</h5>
+            <p class="card-text">Описание тура с отелем 3</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 mb-4" data-category="without-hotel">
+        <div class="card card-fixed-height card-dark card-border">
+          <img src="https://shantours.ru/assets/allowed/photo_2019-08-22_12-29-24.jpg" class="card-img-top" alt="Item 6">
+          <div class="card-body">
+            <h5 class="card-title">Туристический тур без отеля 3</h5>
+            <p class="card-text">Описание тура без отеля 3</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer class="py-3 bg-secondary text-light">
+    <div class="container text-center justify-content-center">
+      <p class="mb-0">&copy; GoToHolidayINC. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../../static/js/tumbler.js"></script>
+</body>
+
+</html>
